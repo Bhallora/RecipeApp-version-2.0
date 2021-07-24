@@ -1,0 +1,99 @@
+.header {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.myActiveClass {
+  color: rgb(100, 205, 247);
+}
+
+
+.navigation-menu {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  right: 40px;
+  position: absolute;
+}
+
+.navigation-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navigation-list-item {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+.title {
+
+  left: 40px;
+  position: absolute;
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .navigation-menu {
+    font-size: 20px;
+  }
+
+  .navigation-list-item {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .navigation-menu {
+    font-size: 14px;
+  }
+
+  .navigation-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navigation-list-item {
+    margin-top: 11px;
+  }
+
+  #homeIconImage {
+    height: 170px;
+    width: 170px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+
+  .navigation-menu {
+    font-size: 12px;
+  }
+
+  .navigation-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navigation-list-item {
+    margin-top: 10px;
+  }
+
+  #homeIconImage {
+    height: 150px;
+    width: 150px;
+  }
+}

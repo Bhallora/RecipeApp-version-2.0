@@ -1,0 +1,20 @@
+<div class="header">
+    <div class="title">
+
+        <a [routerLink]="'/'" routerLinkActive="myActiveClass" [routerLinkActiveOptions]="{exact:true}"><img
+                id='homeIconImage' src='../../assets/Logo2.png' alt="Go to Home"></a>
+
+    </div>
+
+    <div class="navigation-menu">
+        <ul class="navigation-list" Style="list-style-type:none">
+            <li class="navigation-list-item">
+                <a [routerLink]="'/recipes'" routerLinkActive="myActiveClass"> Recipes </a>
+            </li>
+            <li class="navigation-list-item">
+                <a [routerLink]="'/shopping-list'" routerLinkActive="myActiveClass"> Shopping List </a>
+            </li>
+        </ul>
+
+    </div>
+</div>

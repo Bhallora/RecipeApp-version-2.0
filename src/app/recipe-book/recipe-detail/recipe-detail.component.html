@@ -1,0 +1,48 @@
+<div class="jumbotron" style=" background-color: rgb(56, 56, 56)">
+<div class="row">
+  <div class="col-xs-12">
+    <img [src]="recipe?.imagePath" alt="{{recipe?.name ? recipe?.name : 'RecipeImage'}}" class="img-responsive"
+    style="max-height: 350px;">
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h3>{{recipe?.name}}</h3>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="btn-group"
+    appButtons >
+      <button
+        type="button"
+        class="btn btn-primary dropdown-toggle">
+        Manage Recipe <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a (click)="sendToShoppingList()" style="cursor: pointer;">To Shopping List</a></li>
+        <li><a (click)="loadEditRecipePage()" style="cursor: pointer;">Edit Recipe</a></li>
+        <li><a (click)= "onDeleteRecipe()"style="cursor: pointer;">Delete Recipe</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    {{recipe?.description}}
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <li
+        class="list-group-item"
+        style="color: black"
+        *ngFor="let ingredient of recipe?.ingredients">
+
+        {{ ingredient?.name }} - {{ ingredient?.amount }}
+    </li>
+    </ul>
+  </div>
+</div>
+</div>

@@ -1,0 +1,17 @@
+<app-header></app-header>
+
+<div class="intro-page">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button class="btn btn-primary btn-md" aria-label="Example icon button with a home icon" id='homeIcon'
+  (click)='loadHome()' *ngIf="isRoute() != '/'">
+  <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+</button>
